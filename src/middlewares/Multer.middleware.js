@@ -1,5 +1,6 @@
 import multer from "multer";
 
+// it stores the images/pdfs/files..etc given by the user in the path public->temp 
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {

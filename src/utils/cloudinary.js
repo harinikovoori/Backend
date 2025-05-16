@@ -42,7 +42,7 @@ import fs from "fs"
             
             
         } catch (error) {
-            fs.unlinkSync(localFilePath)
+            fs.unlinkSync(localFilePath)//remove the locally saved temporary files as the upload operation got failed
             return null;
         }
     }
